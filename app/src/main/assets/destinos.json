@@ -1,0 +1,16 @@
+[
+  { "id": 1,  "nombre": "Naxos",                 "pais": "Grecia",     "categoria": "Playas",               "plan": "Playas de Agios Prokopios y Plaka",         "precio": 920.0  },
+  { "id": 2,  "nombre": "Nungwi Beach",          "pais": "Tanzania",   "categoria": "Playas",               "plan": "Snorkel en arrecifes y atardecer en dhow",  "precio": 980.0  },
+
+  { "id": 3,  "nombre": "Banff",                 "pais": "Canadá",     "categoria": "Montañas",             "plan": "Lagos Moraine y Louise, senderismo",        "precio": 1350.0 },
+  { "id": 4,  "nombre": "Interlaken",            "pais": "Suiza",      "categoria": "Montañas",             "plan": "Jungfraujoch y rutas alpinas",              "precio": 1480.0 },
+
+  { "id": 5,  "nombre": "Hallstatt",             "pais": "Austria",    "categoria": "Ciudades Históricas",  "plan": "Centro histórico y minas de sal",           "precio": 860.0  },
+  { "id": 6,  "nombre": "Dubrovnik",             "pais": "Croacia",    "categoria": "Ciudades Históricas",  "plan": "Murallas y casco antiguo",                  "precio": 990.0  },
+
+  { "id": 7,  "nombre": "Angkor Wat",            "pais": "Camboya",    "categoria": "Maravillas del Mundo", "plan": "Templos de Angkor al amanecer",             "precio": 1400.0 },
+  { "id": 8,  "nombre": "La Gran Muralla",       "pais": "China",      "categoria": "Maravillas del Mundo", "plan": "Tramos Mutianyu/Badaling",                   "precio": 1300.0 },
+
+  { "id": 9,  "nombre": "Kinabatangan",          "pais": "Malasia",    "categoria": "Selvas",               "plan": "Crucero fluvial y observación de fauna",    "precio": 1050.0 },
+  { "id": 10, "nombre": "Bosque Impenetrable de Bwindi", "pais": "Uganda", "categoria": "Selvas",           "plan": "Trekking para ver gorilas de montaña",      "precio": 1750.0 }
+]

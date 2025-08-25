@@ -13,10 +13,13 @@
         android:theme="@style/Theme.Taller1_ICM_SinWifi"
         tools:targetApi="31">
         <activity
-            android:name=".DetallesDestino"
+            android:name=".Logica.DetallesDestino"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Logica.ExplorarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Logica.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
