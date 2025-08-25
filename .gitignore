@@ -39,7 +39,6 @@ outputs/
 # NDK
 obj/
 *.so
-
 # Kotlin build cache
 .kotlin/
 
