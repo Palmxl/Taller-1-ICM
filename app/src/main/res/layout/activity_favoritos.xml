@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Botón Volver -->
     <Button
-        android:id="@+id/btnVolverExplorar"
+        android:id="@+id/btnVolverFavoritos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="← Volver"
@@ -15,17 +14,8 @@
         android:backgroundTint="#6A1B9A"
         android:layout_marginBottom="12dp"/>
 
-    <!-- (Opcional) rótulo de categoría -->
-    <TextView
-        android:id="@+id/textoCategoria"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Filtrando por: Todos"
-        android:textStyle="bold"
-        android:paddingBottom="8dp"/>
-
     <ListView
-        android:id="@+id/lvDestinos"
+        android:id="@+id/lvFavoritos"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"

@@ -19,6 +19,12 @@
             android:name=".Logica.ExplorarActivity"
             android:exported="false" />
         <activity
+            android:name=".Logica.FavoritosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Logica.RecomendacionesActivity"
+            android:exported="false" />
+        <activity
             android:name=".Logica.MainActivity"
             android:exported="true">
             <intent-filter>

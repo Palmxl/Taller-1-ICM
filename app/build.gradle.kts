@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.taller1_icm_sinwifi"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.taller1_icm_sinwifi"

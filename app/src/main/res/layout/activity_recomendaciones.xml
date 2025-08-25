@@ -2,68 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF9FB"
-    tools:context=".Logica.DetallesDestino">
-
-    <LinearLayout
-        android:id="@+id/textos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:padding="8dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <TextView
-            android:id="@+id/titulo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Destino"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#333"/>
-
-        <TextView
-            android:id="@+id/pais"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="País"
-            android:textSize="16sp"
-            android:textColor="#555"/>
-
-        <TextView
-            android:id="@+id/categoria"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Categoría"
-            android:textSize="16sp"
-            android:textColor="#555"/>
-
-        <TextView
-            android:id="@+id/plan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Plan turístico"
-            android:textSize="16sp"
-            android:textColor="#555"/>
-
-        <TextView
-            android:id="@+id/precio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Precio"
-            android:textSize="16sp"
-            android:textColor="#555"/>
-    </LinearLayout>
+    android:background="#FFF9FB">
 
     <Button
-        android:id="@+id/btnVolverDetalles"
+        android:id="@+id/btnVolverRecs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="← Volver"
@@ -73,19 +17,55 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-
-    <Button
-        android:id="@+id/botonFavoritos"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Añadir a Favoritos"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#6A1B9A"
-        android:layout_margin="16dp"
-        android:padding="12dp"
-        android:gravity="center"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
 
+        <TextView
+            android:id="@+id/recTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destino"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#333" />
+
+        <TextView
+            android:id="@+id/recPais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="País"
+            android:textSize="16sp"
+            android:textColor="#555" />
+
+        <TextView
+            android:id="@+id/recCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoría"
+            android:textSize="16sp"
+            android:textColor="#555" />
+
+        <TextView
+            android:id="@+id/recPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan turístico"
+            android:textSize="16sp"
+            android:textColor="#555" />
+
+        <TextView
+            android:id="@+id/recPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio"
+            android:textSize="16sp"
+            android:textColor="#555" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

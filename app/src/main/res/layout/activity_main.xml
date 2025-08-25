@@ -10,6 +10,7 @@
     <!-- Spinner de categorías -->
     <Spinner
         android:id="@+id/spinnerCategorias"
+        android:entries="@array/categorias_array"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"

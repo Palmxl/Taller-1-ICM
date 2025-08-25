@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.TextView
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.taller1_icm_sinwifi.Datos.Destino
@@ -17,7 +18,10 @@ class ExplorarActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_explorar) // Debe tener ListView id=lvDestinos
+        setContentView(R.layout.activity_explorar)
+
+        findViewById<Button?>(R.id.btnVolverExplorar)?.setOnClickListener { finish() }
+
         initUI()
     }
 
@@ -32,7 +36,12 @@ class ExplorarActivity : AppCompatActivity() {
         if (listaFiltrada.isEmpty()) {
             Toast.makeText(this, "No hay destinos en esta categoría", Toast.LENGTH_SHORT).show()
         }
-        lv.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listaFiltrada.map { it.nombre })
+
+        lv.adapter = ArrayAdapter(
+            this,
+            android.R.layout.simple_list_item_1,
+            listaFiltrada.map { it.nombre }
+        )
 
         lv.setOnItemClickListener { _, _, position, _ ->
             val destino = listaFiltrada[position]

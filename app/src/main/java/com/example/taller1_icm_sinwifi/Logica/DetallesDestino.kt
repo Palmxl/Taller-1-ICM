@@ -16,27 +16,34 @@ class DetallesDestino : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalles_destino)
 
+        findViewById<Button>(R.id.btnVolverDetalles)?.setOnClickListener { finish() }
+
         val destino = intent.getSerializableExtra(EXTRA_DESTINO) as Destino
 
-        // Ajusta estos IDs a tu XML real
-        findViewById<TextView>(R.id.tvNombre).text = destino.nombre
-        findViewById<TextView>(R.id.tvPais).text = destino.pais
-        findViewById<TextView>(R.id.tvCategoria).text = destino.categoria
-        findViewById<TextView>(R.id.tvPlan).text = destino.plan
-        findViewById<TextView>(R.id.tvPrecio).text = "USD ${destino.precio}"
+        findViewById<TextView>(R.id.titulo).text    = destino.nombre
+        findViewById<TextView>(R.id.pais).text      = destino.pais
+        findViewById<TextView>(R.id.categoria).text = destino.categoria
+        findViewById<TextView>(R.id.plan).text      = destino.plan
+        findViewById<TextView>(R.id.precio).text    = "USD ${destino.precio}"
 
-        val btnFav = findViewById<Button>(R.id.btnAnadirFavorito)
+        val btnFav = findViewById<Button>(R.id.botonFavoritos)
+
+        val yaEsta = Data.FAVORITOS_LIST.any { it.id == destino.id }
+        btnFav.isEnabled = !yaEsta
+        btnFav.text = if (yaEsta) "Ya en Favoritos" else "Añadir a Favoritos"
+
         btnFav.setOnClickListener {
-            val yaEsta = Data.FAVORITOS_LIST.any { it.id == destino.id }
-            if (!yaEsta) {
-                Data.FAVORITOS_LIST.add(destino)
-                btnFav.isEnabled = false
-                Toast.makeText(this, "Añadido a favoritos", Toast.LENGTH_SHORT).show()
-            } else {
+            if (Data.FAVORITOS_LIST.any { it.id == destino.id }) {
                 Toast.makeText(this, "Ya estaba en favoritos", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
             }
+            Data.FAVORITOS_LIST.add(destino)
+            btnFav.isEnabled = false
+            btnFav.text = "Ya en Favoritos"
+            Toast.makeText(this, "Añadido a favoritos", Toast.LENGTH_SHORT).show()
         }
     }
 
     companion object { const val EXTRA_DESTINO = "extra_destino" }
 }
+
