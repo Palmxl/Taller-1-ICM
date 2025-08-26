@@ -6,7 +6,7 @@
 - Santiago Saavedra  
 
 ## 🎥 Enlace del Video
--ENLACE....  
+- https://www.youtube.com/watch?v=aQfqDGqYUL4 
 
 ## 📌 Descripción del Taller
 Para este taller realizamos una aplicación en **Android Studio** que consiste en lo siguiente:  
@@ -19,4 +19,5 @@ Para este taller realizamos una aplicación en **Android Studio** que consiste e
 - Como funcionalidad adicional , agregamos la posibilidad de mostrar el clima actual del destino seleccionado utilizando una API gratuita.  
 
 De esta manera, la aplicación integra el manejo de actividades, listas, filtros, listeners, almacenamiento temporal y consumo de datos externos, cumpliendo con todos los puntos planteados en el taller.  
+
 
